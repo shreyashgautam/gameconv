@@ -1,0 +1,28 @@
+The code comprised of 3 parts first is tic tac tao second is snake and ladder and a third part having a converter.
+THIS IS A MENU DRIVEN GAME
+PRESSING BUTTON TO PLAY. hence all the code would be in a for loop and we would apply break if the user input n if he/she do not want to continue.
+Now coming to the 1st bit ie the tic tac tao game
+
+The game starts with a 2 D integer array that is having the position from 1 to 8 . We have used -- and | to divide it into parts. the next part comprised of two string as this is a two player game and after entering the name we have declare a variable n we starts a infinity for loop inside we would check if n is even or odd if it is even then the chance is of player 1 else it is the chance of player 2 we would then ask from the user to enter the number between 0 to 8 as these position are only possible and check if the given input is within this range else we would print the number is outside the grid after that if it is inside the range we would now use a check function to check if the position is empty or not as if it is empty the it would be only " " there else there may be "o" or "x", if the func would return 1 then we would go and put the "o" and then increment n and print the array else we would say that the position is already occucpied and we would not increment the value of n there is another check array func that is used to check if the 3 "o" or 3"x" are in a line or not if it in the line we would directly print congrats player 1 would and break the for loop. after coming out of if we would use another if to check if the array is full or not if the array is full it would return 0 and we would print game has ended and it was a tie. now we would come to player 2 when n is odd we would return the same code for is even just in place of "o" we would write "X" as x is for player 2 and check if he has won or not . after coming out we would again check for array full or not .
+
+Now coming to the 2nd bit ie the snack and ladder game. 
+
+The game also starts with a 2d interger array that is having all the position from 1 to 100 and we would be printing this along with it we would also be printing the position of all the ladder and snake and from where to where it takes.
+we would input two string who are the name of the people playing this game and declare n and starta and startb as 0 as these are the starting point of the players. we would start the infinity for loop and check if the n is even or odd if it is even then is it a chance of player 1 we would roll the dice using a function this function is made using importing a random function that would always return a number from 1 to 6.we would even ask from the user whether they want to roll the dice or the computer would do it . we would then add the number that came to starta and then check if the number came is 6 or not if it isn't 6 then we would increment n else we would give then another chance . now we would check using multiple if and else if block whether at starta there is a snake or ladder or not . if it is there we would update the values to there respective values. if the starta has when above 100 we would decrement the value and subract it by x. then we would print the current posi and if x ie the number was 6 we would print your chance came again
+now if starta is ==100 we would break and print a is winner
+
+we would do this again for odd n ie for player 2 using startb in place of starta 
+
+
+Now coming to the third code ie the converter
+
+there are 18 options available from converting from different format to another format and also adding to different format number to get a different format number. we would be using logic of switch case and then do the respective work
+for example in case of dec to bin converter we are using the logic of number reverse and while till the number !=0 and we are adding the rem=n%2 to any array and after that we are adding the numbers in the array ie 0 and 1 to a number in a reverse manner 
+
+same logic is used for octal as well as for hexadecimal in place of 2 we would be using 8 or 16 . in case of hexadecimal we would also be checking it the number is 10 11 12 13 14 15 and write A B C D E F in place of that.
+
+for converting bin to decimal we would be using power function by taking the last degit and making it to the 2 power a and increment a each time. hence we would get decimal number same goes for octal number as well.
+
+for binary to octal we would be converting binary first to decimal then to octal same goes for bin to hexadecimal ,octal to hexadecimal,hexadecimal to octal.
+
+now coming to the adding part for that first we would converting the number that is be inputed to a decimal and then do the calculation and then convert it to the desired output by using the function that are present.
